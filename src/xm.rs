@@ -170,9 +170,7 @@ impl XMInfo {
         };
 
         format!(
-            "{} - {} - {}.{}",
-            self.artist.clone().unwrap_or_default(),
-            self.album.clone().unwrap_or_default(),
+            "{}.{}",
             self.title.clone().unwrap_or_default(),
             ext_name
         )
