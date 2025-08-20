@@ -24,6 +24,7 @@ fn main() -> Result<()> {
         if let Err(e) = decrypt_file(&file) {
             eprintln!("error: {:?} {:?}", file, e);
         }
+        std::thread::sleep(std::time::Duration::from_secs(1));
     }
     Ok(())
 }
